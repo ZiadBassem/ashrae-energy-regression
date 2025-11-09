@@ -1,0 +1,9 @@
+python>=3.10
+numpy==1.26.*
+pandas==2.2.*
+matplotlib==3.9.*
+seaborn==0.13.*
+lightgbm==4.5.*
+scikit‑learn==1.4.*
+joblib==1.4.*
+kaggle==1.6.*
