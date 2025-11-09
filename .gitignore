@@ -1,0 +1,38 @@
+# =============================
+#  ASHRAE – Energy Regression
+#  Git Ignore Rules
+# =============================
+
+# ---- Python / Jupyter ----
+__pycache__/
+*.py[cod]
+*.ipynb_checkpoints
+.DS_Store
+.env
+venv/
+.idea/
+.vscode/
+
+# ---- Data & Credentials ----
+data/
+data_kaggle/
+.kaggle/
+*.json
+*.zip
+*.7z
+
+# ---- Outputs / Large files ----
+outputs/submission*.csv
+outputs/*.log
+outputs/*.tmp
+outputs/*.npy
+outputs/*.png
+
+# Keep these important artifacts
+!outputs/*.pkl
+!outputs/run_log.json
+
+# ---- Environment ----
+*.egg-info/
+dist/
+build/
