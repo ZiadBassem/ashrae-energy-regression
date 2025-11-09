@@ -1,70 +1,55 @@
-# =========================================
-#  ASHRAE – Energy Regression (Kaggle + IBM)
-#  Git Ignore Rules
-# =========================================
+# ====================================
+# === Python Data Science Project ====
+# ====================================
 
-# ---- Python / Jupyter ----
-__pycache__/
-*.py[cod]
-*.so
-*.ipynb_checkpoints
-*.egg-info/
+# --- OS / Editor / Environment ---
 .DS_Store
-.env
-venv/
-.idea/
-.vscode/
-
-# ---- Data & Credentials ----
-data/
-data_kaggle/
-.kaggle/
-*.json
-*.zip
-*.7z
-*.tar
-*.tar.gz
-*.rar
-
-# ---- Outputs / Large Files ----
-outputs/submission*.csv
-outputs/*.log
-outputs/*.tmp
-outputs/*.npy
-outputs/*.png
-# keep models and logs that are useful
-!outputs/*.pkl
-!outputs/run_log.json
-!outputs/figures/
-!outputs/figures/*.png
-
-# ---- Notebooks / Experiments ----
-*.checkpoint
-*.bak
-*.old
-
-# ---- Environment / Build Artifacts ----
-dist/
-build/
-.eggs/
-pip-wheel-metadata/
-__pypackages__/
-*.whl
-
-# ---- OS Files ----
 Thumbs.db
-Desktop.ini
-*$RECYCLE.BIN/
+.vscode/
+.idea/
+*.swp
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pkl
+*.bak
 
-# ---- Kaggle / API Keys ----
-kaggle.json
-# Ignore dataset folders
-data/
-data_kaggle/
+# --- Virtual environments ---
+venv/
+.env/
+env/
+.venv/
+ENV/
 
-# Ignore model outputs and results
-outputs/
+# --- Jupyter Notebook ---
+.ipynb_checkpoints/
+*.nbconvert.ipynb
 
-# (Optional) Ignore temporary files
+# --- Logs & temporary files ---
 *.log
 *.tmp
+*.out
+*.err
+
+# --- Build & packaging ---
+build/
+dist/
+*.egg-info/
+
+# --- Large data directories ---
+data/
+data_kaggle/
+outputs/
+models/
+checkpoints/
+
+# --- Cache ---
+.cache/
+*.cache
+*.dat
+*.npy
+*.npz
+
+# --- System files ---
+desktop.ini
