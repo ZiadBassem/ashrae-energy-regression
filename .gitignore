@@ -1,38 +1,60 @@
-# =============================
-#  ASHRAE – Energy Regression
-#  Git Ignore Rules
-# =============================
+# =========================================
+#  ASHRAE – Energy Regression (Kaggle + IBM)
+#  Git Ignore Rules
+# =========================================
 
 # ---- Python / Jupyter ----
 __pycache__/
 *.py[cod]
+*.so
 *.ipynb_checkpoints
+*.egg-info/
 .DS_Store
 .env
 venv/
 .idea/
 .vscode/
 
-# ---- Data & Credentials ----
+# ---- Data & Credentials ----
 data/
 data_kaggle/
 .kaggle/
 *.json
 *.zip
 *.7z
+*.tar
+*.tar.gz
+*.rar
 
-# ---- Outputs / Large files ----
+# ---- Outputs / Large Files ----
 outputs/submission*.csv
 outputs/*.log
 outputs/*.tmp
 outputs/*.npy
 outputs/*.png
-
-# Keep these important artifacts
+# keep models and logs that are useful
 !outputs/*.pkl
 !outputs/run_log.json
+!outputs/figures/
+!outputs/figures/*.png
 
-# ---- Environment ----
-*.egg-info/
+# ---- Notebooks / Experiments ----
+*.checkpoint
+*.bak
+*.old
+
+# ---- Environment / Build Artifacts ----
 dist/
 build/
+.eggs/
+pip-wheel-metadata/
+__pypackages__/
+*.whl
+
+# ---- OS Files ----
+Thumbs.db
+Desktop.ini
+*$RECYCLE.BIN/
+
+# ---- Kaggle / API Keys ----
+kaggle.json
