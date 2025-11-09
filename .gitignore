@@ -58,3 +58,13 @@ Desktop.ini
 
 # ---- Kaggle / API Keys ----
 kaggle.json
+# Ignore dataset folders
+data/
+data_kaggle/
+
+# Ignore model outputs and results
+outputs/
+
+# (Optional) Ignore temporary files
+*.log
+*.tmp
